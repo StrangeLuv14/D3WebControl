@@ -22,7 +22,7 @@ function draw() {
   image(bgimg, 0, 0, document.body.clientWidth, window.innerHeight);
 
   if(lantern.launchStatus) {
-    var floating = createVector(0, -0.02);
+    var floating = createVector(0, -0.05);
     lantern.applyForce(floating);
   }
   lantern.update();
